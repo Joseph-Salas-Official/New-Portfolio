@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/profile.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="captcha-overlay" class="captcha-overlay active">
+        <div class="captcha-container">
+            <h2>CAPTCHA Verification</h2>
+            <p>Please complete this simple task to view this portfolio</p>
+            <div class="captcha-challenge">
+                <span id="captcha-question"></span>
+                <input type="text" id="captcha-answer" placeholder="Your answer">
+            </div>
+            <button id="captcha-submit" class="btn primary">Verify</button>
+            <p class="captcha-error" id="captcha-error"></p>
+        </div>
+    </div>
+
+    <div id="welcome-screen" class="welcome-screen">
+        <div class="welcome-content">
+            <h1 id="welcome-text" class="welcome-text"></h1>
+            <button id="enter-site" class="btn primary" style="display: none;">Enter Portfolio</button>
+        </div>
+    </div>
+
+    <div class="liquid-bg">
+        <div class="liquid-shape"></div>
+        <div class="liquid-shape"></div>
+        <div class="liquid-shape"></div>
+        <div class="liquid-shape"></div>
+    </div>
+
+    <div class="page-transition-overlay"></div>
+
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="#home" data-target="home">Portfolio</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active" data-target="home"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#about" class="nav-link" data-target="about"><i class="fa-solid fa-circle-info"></i> About</a></li>
+                <li><a href="#education" class="nav-link" data-target="education"><i class="fa-solid fa-school"></i> Education</a></li>
+                <li><a href="#experience" class="nav-link" data-target="experience"><i class="fa-solid fa-list-check"></i> Experience</a></li>
+                <li><a href="#works" class="nav-link" data-target="works"><i class="fa-solid fa-briefcase"></i> Works</a></li>
+                <li><a href="#skills" class="nav-link" data-target="skills"><i class="fa-solid fa-dumbbell"></i> Skills</a></li>
+            </ul>
+            <div class="nav-utility">
+                <button class="theme-toggle icon-button-wrapper" id="theme-icon-btn">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                    <span class="hover-text">Change Theme</span>
+                </button>
+                <button class="icon-button-wrapper" id="contact-header-btn">
+                    <i class="fas fa-envelope"></i>
+                    <span class="hover-text">Contact Me</span>
+                </button>
+                <button class="hamburger" id="hamburger-btn">
+                    <i id="hamburger-icon" class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section active">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Hi, I'm <span class="highlight">Joseph Salas</span></h1>
+                        <p class="tagline">Teacher (English Language) and AI prompt worker</p>
+                        <p class="description">I teach and I create beautiful, functional websites and applications with modern technologies and user-centered design principles.</p>
+                        <div class="cta-buttons">
+                            </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/profile.jpg" alt="Joseph Salas Profile Picture" class="profile-img">
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm a passionate teacher and IT specialist. I specialize in AI prompting, and implementing modern technologies in teaching.</p>
+                        <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.</p>
+                    </div>
+                    <div class="about-highlights">
+                        <ul class="highlight-list">
+                            <li class="highlight-item"><i class="fas fa-check-circle"></i> <span class="key-highlight">5+ Years</span> of experience in education and IT.</li>
+                            <li class="highlight-item"><i class="fas fa-check-circle"></i> Expert in <span class="key-highlight">AI Prompt Engineering</span>.</li>
+                            <li class="highlight-item"><i class="fas fa-check-circle"></i> Proficient in <span class="key-highlight">HTML5, CSS3, and JavaScript</span>.</li>
+                            <li class="highlight-item"><i class="fas fa-check-circle"></i> Strong foundation in <span class="key-highlight">User-Centered Design</span> principles.</li>
+                            <li class="highlight-item"><i class="fas fa-check-circle"></i> Focused on leveraging <span class="key-highlight">modern technologies</span> in the classroom.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <span class="section-subtitle">Hover each tile to view more</span>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-brief">
+                                <h3>B.A. English</h3>
+                            </div>
+                            <div class="timeline-detail">
+                                <p><span class="key-highlight">College:</span> St. Dominic's College Kanjirappally (Affiliated to M G University)</p>
+                                <p><span class="key-highlight">Year:</span> 2019 - 2022</p>
+                                <p>Graduated with honors. Focused on Language and Literature and teaching as a complementary.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-brief">
+                                <h3>D.El.Ed</h3>
+                            </div>
+                            <div class="timeline-detail">
+                                <p><span class="key-highlight">Institute:</span> DIET Kottayam (Government of Kerala)</p>
+                                <p><span class="key-highlight">Year:</span> 2022 - 2024</p>
+                                <p>Teaching as main subject.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <span class="section-subtitle">Hover each tile to view more</span>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-brief">
+                                <h3>Junior Teacher</h3>
+                            </div>
+                            <div class="timeline-detail">
+                                <p><span class="key-highlight">Institute:</span> Tech Solutions Inc.</p>
+                                <p><span class="key-highlight">Time:</span> 2021 - Present</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="section">
+            <div class="container">
+                <h2 class="section-title">My Projects & Works</h2>
+                <span class="section-subtitle">Hover each tile to view more</span>
+                <div class="works-grid">
+                    <div class="work-item">
+                        <div class="work-thumbnail">
+                            <img src="images/Republic Day 2025.png" alt="Project 1 Thumbnail">
+                        </div>
+                        <div class="work-details">
+                            <h3>Republic Day of India 2025</h3>
+                            <p class="work-software">Software(s) Used: Adobe Premier Pro</p>
+                            <a href="https://youtu.be/b7h_3IRbaIs" class="btn primary btn-small" target="_blank">View More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="work-item">
+                        <div class="work-thumbnail">
+                            <img src="images/Porfolio.jpeg" alt="Project 2 Thumbnail">
+                        </div>
+                        <div class="work-details">
+                            <h3>Portfolio Website (This One!)</h3>
+                            <p class="work-software">Software(s) Used: HTML5, CSS3, JavaScript</p>
+                            <a href="#" class="btn primary btn-small" target="_blank">View More</a>
+                        </div>
+                    </div>
+
+                    <div class="work-item">
+                        <div class="work-thumbnail">
+                            <img src="images/Moon Day 2025.png" alt="Project 3 Thumbnail">
+                        </div>
+                        <div class="work-details">
+                            <h3>Moon Day 2025</h3>
+                            <p class="work-software">SSoftware(s) Used: Adobe Premier Pro</p>
+                            <a href="https://youtu.be/wlHDEDKWH6k" class="btn primary btn-small" target="_blank">Veiw More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Webpage Design</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                        </div>                        
+                    </div>
+                    <div class="skill-category">                        
+                        <h3>Teaching</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">Class Management</span>
+                            <span class="skill-tag">Teaching using technologies</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">                        
+                        <h3>Technology</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">AI Prompting</span>
+                            <span class="skill-tag">Adaptive</span>
+                        </div>
+                    </div>                                 
+                </div>
+            </div>
+        </section>        
+    </main>
+
+    <div id="contact-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Contact Me</h2>
+            <form id="contact-form" name="contact-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" novalidate>
+                <input type="hidden" name="form-name" value="contact-form" />
+                
+                <div style="display:none;">
+                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-name">Name / Institute</label>
+                    <input type="text" id="contact-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-description">Description</label>
+                    <textarea id="contact-description" name="description" rows="4" required></textarea>
+                </div>
+                <button type="submit" id="form-submit-btn" class="btn primary">Send Message</button>
+                <p id="form-message" class="form-message"></p>
+            </form>
+            </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Joseph Salas All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="pdf-generator.js"></script>
+</body>
+</html>
