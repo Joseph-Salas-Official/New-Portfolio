@@ -14,7 +14,7 @@ const sections = document.querySelectorAll('.section');
 const navLinks = document.querySelectorAll('.nav-link');
 const hamburger = document.getElementById('hamburger-btn'); // Use the button ID
 const navMenu = document.querySelector('.nav-links');
-const downloadButton = document.getElementById('download-cv');
+// const downloadButton = document.getElementById('download-cv'); // REMOVED
 
 // Contact Modal Elements
 const contactModal = document.getElementById('contact-modal');
@@ -169,23 +169,7 @@ function enterSite() {
 }
 
 // --- CORE FUNCTIONALITY ---
-function downloadCV() {
-    if (typeof generateCV !== 'function') {
-        console.error('generateCV function not found.');
-        return;
-    }
-    const hoverTextSpan = downloadButton.querySelector('.hover-text');
-    if (hoverTextSpan) {
-        const originalHoverText = hoverTextSpan.textContent;
-        hoverTextSpan.textContent = 'Generating...';
-        downloadButton.disabled = true;
-        setTimeout(() => {
-            generateCV();
-            hoverTextSpan.textContent = originalHoverText;
-            downloadButton.disabled = false;
-        }, 500); 
-    }
-}
+/* REMOVED downloadCV function */
 
 function navigateToSection(sectionId) {
     if (!sectionId) return; // Prevent errors if sectionId is null
@@ -327,12 +311,11 @@ function setupEventListeners() {
     enterSiteBtn.addEventListener('click', enterSite);
     themeToggle.addEventListener('click', toggleTheme);
     
-    if (downloadButton) downloadButton.addEventListener('click', downloadCV);
+    // if (downloadButton) downloadButton.addEventListener('click', downloadCV); // REMOVED
     
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
-            // --- FIX: Corrected attribute from 'data-data-target' to 'data-target' ---
             navigateToSection(link.getAttribute('data-target'));
         });
     });
